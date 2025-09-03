@@ -1,0 +1,53 @@
+<?php
+// Ngăn chặn truy cập trực tiếp
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+// Display any messages
+settings_errors('custom_map_messages');
+?>
+
+<div class="wrap custom-map-admin">
+    <h1 class="wp-heading-inline">
+        <span class="dashicons dashicons-location-alt"></span> 
+        Quản lý Bản đồ Địa điểm
+    </h1>
+    <div class="custom-plugin-badge">
+        <span class="dashicons dashicons-location"></span> My Custom Map Plugin
+    </div>
+    
+    <!-- Tab Navigation -->
+    <nav class="nav-tab-wrapper">
+        <a href="?page=custom-map-settings&tab=locations" 
+           class="nav-tab <?php echo $active_tab == 'locations' ? 'nav-tab-active' : ''; ?>">
+            <span class="dashicons dashicons-admin-site"></span> Quản lý Địa điểm
+        </a>
+        <a href="?page=custom-map-settings&tab=settings" 
+           class="nav-tab <?php echo $active_tab == 'settings' ? 'nav-tab-active' : ''; ?>">
+            <span class="dashicons dashicons-admin-appearance"></span> Cài đặt Hiển thị
+        </a>
+        <a href="?page=custom-map-settings&tab=guide" 
+           class="nav-tab <?php echo $active_tab == 'guide' ? 'nav-tab-active' : ''; ?>">
+            <span class="dashicons dashicons-editor-help"></span> Hướng dẫn & Shortcode
+        </a>
+    </nav>
+
+    <div class="tab-content">
+        <?php 
+        switch($active_tab) {
+            case 'locations':
+                custom_map_render_locations_tab($locations);
+                break;
+            case 'settings':
+                custom_map_render_settings_tab();
+                break;
+            case 'guide':
+                custom_map_render_guide_tab();
+                break;
+        }
+        ?>
+    </div>
+</div>
+
+<?php custom_map_render_admin_scripts(); ?>
