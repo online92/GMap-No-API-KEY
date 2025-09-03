@@ -2,8 +2,9 @@
 
 Plugin WordPress đơn giản và mạnh mẽ giúp bạn tạo và quản lý danh sách các địa điểm, hiển thị chúng trên bản đồ Google Maps mà **không cần sử dụng API Key**. Lý tưởng cho việc hiển thị danh sách cửa hàng, chi nhánh, hoặc bất kỳ địa điểm nào bạn muốn.
 
-![Hình ảnh giao diện plugin]( <img width="797" height="437" alt="ảnh" src="https://github.com/user-attachments/assets/07a46732-e0e2-42b0-982f-f50f53bb9749" />
-) ---
+ <img width="797" height="437" alt="ảnh" src="https://github.com/user-attachments/assets/07a46732-e0e2-42b0-982f-f50f53bb9749" />
+<img width="1709" height="436" alt="ảnh" src="https://github.com/user-attachments/assets/6790f01b-dcb7-454e-8d24-22f31f0ccd66" />
+
 
 ## ✨ Tính năng nổi bật
 
